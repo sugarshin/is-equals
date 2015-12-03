@@ -1,0 +1,41 @@
+{
+  "name": "is-equals",
+  "version": "1.0.0",
+  "description": "is all equal.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sugarshin/is-equals.git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "test",
+    "util",
+    "is",
+    "check",
+    "equal",
+    "equals",
+    "is-equals"
+  ],
+  "scripts": {
+    "eslint": "eslint src test.js",
+    "test": "mocha --compilers js:espower-babel/guess test.js",
+    "babel": "babel -o index.js --presets es2015 --no-babelrc src/index.js",
+    "build": "npm run eslint && npm run babel"
+  },
+  "author": "sugarshin",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "babel-eslint": "^5.0.0-beta4",
+    "babel-preset-es2015": "^6.1.18",
+    "eslint": "^1.10.3",
+    "eslint-config-sugarshin": "0.0.13",
+    "eslint-plugin-babel": "^3.0.0",
+    "espower-babel": "^4.0.0",
+    "mocha": "^2.3.4",
+    "power-assert": "^1.2.0"
+  }
+}

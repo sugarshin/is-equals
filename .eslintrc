@@ -1,0 +1,6 @@
+{
+  "extends": "sugarshin",
+  "rules": {
+    "no-arrow-condition": 0
+  }
+}
